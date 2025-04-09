@@ -6,7 +6,7 @@ import * as dotenv from "dotenv";
 
 
 dotenv.config();
-database = "postgresql://neondb_owner:npg_CEvNB8yQgGL3@ep-holy-feather-a5okqfyy-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require"
+var database = "postgresql://neondb_owner:npg_CEvNB8yQgGL3@ep-holy-feather-a5okqfyy-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require"
 
 neonConfig.webSocketConstructor = ws;
 
