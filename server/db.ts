@@ -6,10 +6,11 @@ import * as dotenv from "dotenv";
 
 
 dotenv.config();
+database = "postgresql://neondb_owner:npg_CEvNB8yQgGL3@ep-holy-feather-a5okqfyy-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require"
 
 neonConfig.webSocketConstructor = ws;
 
-if (!process.env.DATABASE_URL) {
+if (!database) {
   throw new Error(
     "DATABASE_URL must be set. Did you forget to provision a database?",
   );
