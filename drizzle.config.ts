@@ -3,8 +3,9 @@ import * as dotenv from "dotenv";
 
 
 dotenv.config();
-if (!process.env.DATABASE_URL) {
-  throw new Error("DATABASE_URL, ensure the database is provisioned"+ process.env.DATABASE_URL);
+database = "postgresql://neondb_owner:npg_CEvNB8yQgGL3@ep-holy-feather-a5okqfyy-pooler.us-east-2.aws.neon.tech/neondb?sslmode=require"
+if (!database) {
+  throw new Error("DATABASE_URL, ensure the database is provisioned");
 }
 
 export default defineConfig({
